@@ -34,7 +34,7 @@ print(p.id, p.summoner.region, p.summoner.account_id, p.summoner.name, p.summone
 print("////BLOCKER////")
 print("Blue team:")
 for p in match.blue_team.participants:
-    print(p.summoner.name, 'playing', p.champion.name, "with", p.runes.keystone.name, "in", p.role.name)
+    print(p.summoner.name, 'playing', p.champion.name, "with", p.runes.keystone.name, "and", p.summoner_spell_d.name + "/" + p.summoner_spell_f.name)
 print("Red team:")
 for p in match.red_team.participants:
-    print(p.summoner.name, 'playing', p.champion.name, "with", p.runes.keystone.name, "in", p.role.name)
+    print(p.summoner.name, 'playing', p.champion.name, "with", p.runes.keystone.name, "and", p.summoner_spell_d.name + "/" + p.summoner_spell_f.name)
